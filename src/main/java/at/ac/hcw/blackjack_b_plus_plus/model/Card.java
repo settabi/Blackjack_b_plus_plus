@@ -26,6 +26,6 @@ public class Card {
 
     @Override
     public String toString() {
-        return name + "of" + symbol + "(has value"+ value +")";
+        return name + " of " + symbol + " (has value "+ value +" )";
     }
 }
