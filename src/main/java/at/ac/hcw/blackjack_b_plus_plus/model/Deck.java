@@ -38,6 +38,10 @@ public class Deck {
 
     }
 
+    public void removeCardfromDeck(Card card){
+        cards.remove(card);
+    }
+
     @Override
     public String toString() {
         return "Cards: " + '\n' + cards;

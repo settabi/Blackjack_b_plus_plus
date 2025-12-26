@@ -9,5 +9,6 @@ public class Launcher {
 //        Application.launch(BlackjackApp.class, args);
         Deck deck = new Deck();
         System.out.println(deck);
+
     }
 }
