@@ -5,11 +5,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a270a01-cb92-48e7-a59f-965d810d6cc1" name="Changes" comment="first commit done by umut demirez.&#10;-changed the structure of the files. (renamed for efficient usability).&#10;-Created the Card class for the card objects which is probably the most core class in this project.">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/gradle.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/gradle.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/Launcher.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Card.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Deck.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Hand.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -82,7 +82,7 @@
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Deck__umut",
+    "git-widget-placeholder": "27__12__25__00__10__demirez",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
@@ -96,7 +96,7 @@
       <recent name="at.ac.hcw.blackjack_b_plus_plus" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Launcher">
+  <component name="RunManager" selected="Application.BlackjackApp">
     <configuration name="BlackjackApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="at.ac.hcw.blackjack_b_plus_plus.BlackjackApp" />
       <module name="Blackjack_b_plus_plus.main" />
