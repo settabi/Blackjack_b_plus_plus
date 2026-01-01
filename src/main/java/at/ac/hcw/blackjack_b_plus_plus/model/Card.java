@@ -5,7 +5,7 @@ import java.util.Objects;
 public class Card {
 
     private String symbol; //called suits aswell (heart, diamond etc...)
-    private String name; // called rank aswell (king, queen, 2, ace, 3 etc..)
+    private String name; //called rank aswell (king, queen, 2, ace, 3 etc..)
     private int value;//value of the card we do have we need this for the point counting
 
     public Card(String symbol, String name, int value) {
