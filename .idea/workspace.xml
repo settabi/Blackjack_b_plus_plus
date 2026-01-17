@@ -4,12 +4,44 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9a270a01-cb92-48e7-a59f-965d810d6cc1" name="Changes" comment="first commit done by umut demirez.&#10;-changed the structure of the files. (renamed for efficient usability).&#10;-Created the Card class for the card objects which is probably the most core class in this project.">
+    <list default="true" id="9a270a01-cb92-48e7-a59f-965d810d6cc1" name="Changes" comment="forgot to make a branch">
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/controller/RulesController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/controller/RulesPage2Controller.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/game-view.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/100_chip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/200_chip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/500_chip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/50_chip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/Place_down_bet_circle_text.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/all_in_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/background_name_balance_player.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/btn_back.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/btn_close.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/btn_exit.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/btn_next.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/btn_rules.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/btn_start.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/clear_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/dealer_yumeko.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/dealername_background.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/musik.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/pfeil_nach_links.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/pfeil_nach_rechts.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/rules_content.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/rules_content_2.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/rules_header.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/start_button.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/tisch.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/welcome.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/whole_deck.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/rules-page2.fxml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/rules-view.fxml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Blackjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Partaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Partaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/BlackjackApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/BlackjackApp.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/controller/MenuController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/menu-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -41,6 +73,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="FxmlFile" />
         <option value="Class" />
       </list>
     </option>
@@ -59,17 +92,20 @@
     &quot;assignee&quot;: &quot;settabi&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/umdeset/Blackjack_b_plus_plus.git",
-    "accountId": "a5c69edf-8bfc-4a41-8d40-a0244e449da7"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/umdeset/Blackjack_b_plus_plus.git&quot;,
+    &quot;accountId&quot;: &quot;a5c69edf-8bfc-4a41-8d40-a0244e449da7&quot;
   }
-}]]></component>
+}</component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13" javaHome="$USER_HOME$/Library/Java/JavaVirtualMachines/corretto-21.0.8-1/Contents/Home" gradleVersion="8.13" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
   <component name="ProjectId" id="36vdRS96nAul8o3xbAqBllcxCTM" />
+  <component name="ProjectLevelVcsManager">
+    <ConfirmationsSetting value="2" id="Add" />
+  </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -78,12 +114,13 @@
   "keyToString": {
     "Gradle.Blackjack_b_plus_plus [:at.ac.hcw.blackjack_b_plus_plus.BlackjackApp.main()].executor": "Run",
     "Gradle.Blackjack_b_plus_plus [:at.ac.hcw.blackjack_b_plus_plus.Launcher.main()].executor": "Run",
+    "Gradle.Build Blackjack_b_plus_plus.executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.TerminalTabsStorage.copyFrom.TerminalArrangementManager.252": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
+    "git-widget-placeholder": "umut__16__01",
     "kotlin-language-version-configured": "true",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
   }
@@ -97,7 +134,7 @@
       <recent name="at.ac.hcw.blackjack_b_plus_plus" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.BlackjackApp">
+  <component name="RunManager" selected="Application.Launcher">
     <configuration name="BlackjackApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="at.ac.hcw.blackjack_b_plus_plus.BlackjackApp" />
       <module name="Blackjack_b_plus_plus.main" />
@@ -147,7 +184,15 @@
       <option name="project" value="LOCAL" />
       <updated>1766617754272</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="forgot to make a branch">
+      <option name="closed" value="true" />
+      <created>1768565800892</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1768565800892</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +228,7 @@
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="first commit done by umut demirez.&#10;-changed the structure of the files. (renamed for efficient usability).&#10;-Created the Card class for the card objects which is probably the most core class in this project." />
-    <option name="LAST_COMMIT_MESSAGE" value="first commit done by umut demirez.&#10;-changed the structure of the files. (renamed for efficient usability).&#10;-Created the Card class for the card objects which is probably the most core class in this project." />
+    <MESSAGE value="forgot to make a branch" />
+    <option name="LAST_COMMIT_MESSAGE" value="forgot to make a branch" />
   </component>
 </project>
