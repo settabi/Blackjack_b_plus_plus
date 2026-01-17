@@ -2,44 +2,100 @@
 
 <?import javafx.geometry.*?>
 <?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
 <?import javafx.scene.layout.*?>
-<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.*?>
 
-<StackPane xmlns="http://javafx.com/javafx/17.0.12"
-           xmlns:fx="http://javafx.com/fxml/1"
-           fx:controller="at.ac.hcw.blackjack_b_plus_plus.controller.BlackjackController">
+<StackPane xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.hcw.blackjack_b_plus_plus.controller.BlackjackController">
 
     <children>
-        <VBox fx:id="StartMenu" alignment="CENTER" spacing="30.0" style="-fx-background-color: #8c92ac;">
+        <VBox fx:id="StartMenu" alignment="CENTER" spacing="30.0" style="-fx-background-color: #8c92ac;" visible="false">
             <children>
                 <Label text="Welcome to b++'s Blackjack" textFill="GOLD">
-                    <font><Font name="System Bold" size="48.0"/></font>
+                    <font>
+                        <Font name="System Bold" size="48.0" />
+                    </font>
                 </Label>
                 <VBox alignment="CENTER" spacing="15.0">
                     <children>
-                        <Button prefWidth="200.0" text="Rules" onAction="#switchToRulesMenu"/>
-                        <Button prefWidth="200.0" text="Start Game" onAction="#startPreGameMenu"/>
-                        <Button prefWidth="200.0" text="Exit" onAction="#exitGame"/>
+                        <Button onAction="#switchToRulesMenu" prefWidth="200.0" text="Rules" />
+                        <Button onAction="#startPreGameMenu" prefWidth="200.0" text="Start Game" />
+                        <Button onAction="#exitGame" prefWidth="200.0" text="Exit" />
                     </children>
                 </VBox>
             </children>
         </VBox>
         <VBox fx:id="PreGameMenu" alignment="CENTER" spacing="30.0" style="-fx-background-color: #8c92ac;" visible="false">
             <children>
-                <Region VBox.vgrow="ALWAYS"/>
-                <Label text="Balance: "/>
+                <Region VBox.vgrow="ALWAYS" />
+                <Label text="Balance: " />
                 <Label fx:id="balanceLabel" text="0" />
-                <Label text="Bet: "/>
-                <Label fx:id="betLabel" text="0" />
-                <TextField fx:id="betInput" maxWidth="300.0" onAction="#setBet"/>
+                <Label text="Bet: " />
+                <Label fx:id="currentBetLabel" text="0" />
                 <VBox alignment="BOTTOM_RIGHT" spacing="15.0">
                     <children>
-                        <Button onAction="#allIn" prefWidth="200.0" text="All in"/>
-                        <Button onAction="#startRound" prefWidth="200.0" text="Start"/>
-                        <Button onAction="#clearBet" prefWidth="200.0" text="Clear"/>
-                        <Button onAction="#switchToStartMenu" prefWidth="200.0" text="Back"/>
+                        <HBox alignment="CENTER" spacing="20.0">
+                        <Button mnemonicParsing="false" onAction="#onChip50Clicked">
+                            <graphic>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../Images/Chips/50_chip.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <style>
+                                -fx-background-color: transparent;
+                            </style>
+                        </Button>
+
+                        <Button mnemonicParsing="false" onAction="#onChip100Clicked">
+                            <graphic>
+                                <ImageView fitHeight="50.0" fitWidth="500.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../../../../Images/Chips/100_chip.png" />
+                                </image>
+                                </ImageView>
+                            </graphic>
+                            <style>
+                                -fx-background-color: transparent;
+                            </style>
+                        </Button>
+
+                        <Button mnemonicParsing="false" onAction="#onChip200Clicked">
+                            <graphic>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@../../../../Images/Chips/200_chip.png" />
+                                    </image>
+                                </ImageView>
+                            </graphic>
+                            <style>
+                                -fx-background-color: transparent;
+                            </style>
+                        </Button>
+
+                        <Button mnemonicParsing="false" onAction="#onChip500Clicked">
+                            <graphic>
+                                <ImageView fitHeight="50.0" fitWidth="50.0" pickOnBounds="true" preserveRatio="true">
+                                <image>
+                                    <Image url="@../../../../Images/Chips/500_chip.png" />
+                                </image>
+                                </ImageView>
+                            </graphic>
+                            <style>
+                                -fx-background-color: transparent;
+                            </style>
+                        </Button>
+                        </HBox>
+                        <Button onAction="#onAllInClicked" prefWidth="200.0" text="All in" />
+
+                        <Button onAction="#onDealButtonClicked" prefWidth="200.0" text="Start" />
+                        <Button onAction="#onClearBetClicked" prefWidth="200.0" text="Clear" />
+                        <Button onAction="#switchToStartMenu" prefWidth="200.0" text="Back" />
                     </children>
-                    <padding><Insets bottom="20.0" right="100.0"/></padding>
+                    <padding>
+                        <Insets bottom="20.0" right="100.0" />
+                    </padding>
                 </VBox>
             </children>
         </VBox>
@@ -47,27 +103,55 @@
         <VBox fx:id="RulesMenu" alignment="CENTER" spacing="30.0" style="-fx-background-color: #8c92ac;" visible="false">
             <children>
                 <Label text="Rules" textFill="GOLD">
-                    <font><Font name="System Bold" size="48.0"/></font>
+                    <font>
+                        <Font name="System Bold" size="48.0" />
+                    </font>
                 </Label>
-                <Button prefWidth="200.0" text="Back" onAction="#switchToStartMenu"/>
+                <Button onAction="#switchToStartMenu" prefWidth="200.0" text="Back" />
             </children>
         </VBox>
 
-        <VBox fx:id="GameMenu" alignment="CENTER" spacing="30.0" style="-fx-background-color: #8c92ac;" visible="false">
-            <Label text="Bet: "/>
-            <Label fx:id="betLabel2" text="0" />
-            <HBox fx:id="dealerHand" alignment="CENTER" spacing="-40.0" prefHeight="150.0">
+        <VBox fx:id="GameMenu" alignment="CENTER" spacing="30.0" style="-fx-background-color: #8c92ac;">
+         <HBox alignment="CENTER" spacing="10.0">
+            <children>
+                  <Label text="Bet: " />
+                  <Label fx:id="betLabel" text="0" />
+            </children>
+         </HBox>
+         <Label fx:id="dealerValueLabel" text="0" />
+            <HBox fx:id="dealerHand" alignment="CENTER" prefHeight="150.0" spacing="-40.0">
                 <padding>
-                    <Insets bottom="20.0" top="20.0"/>
+                    <Insets bottom="20.0" top="20.0" />
                 </padding>
             </HBox>
-            <HBox fx:id="playerHand" alignment="CENTER" spacing="-40.0" prefHeight="150.0">
+            <HBox fx:id="playerHand" alignment="CENTER" prefHeight="150.0" spacing="-40.0">
                 <padding>
-                    <Insets bottom="20.0" top="20.0"/>
+                    <Insets bottom="20.0" top="20.0" />
                 </padding>
             </HBox>
-            <Label fx:id="asd"/>
-            <Label fx:id="playerHandValueLabel" text="0"> </Label>
+            <Label fx:id="asd" />
+            <Label fx:id="playerHandValueLabel" text="0" />
+         <HBox alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+            <children>
+               <Button fx:id="btnStand" mnemonicParsing="false" onAction="#standButton" text="Stand" />
+               <Button fx:id="btnHit" mnemonicParsing="false" onAction="#hitButton" text="Hit" />
+            </children>
+         </HBox>
         </VBox>
+      <VBox fx:id="endGameContainer" alignment="CENTER" prefHeight="200.0" prefWidth="100.0" spacing="20.0" visible="false">
+         <children>
+            <Label fx:id="winnerLabel" mouseTransparent="true" textAlignment="CENTER" textFill="GOLD">
+               <font>
+                  <Font name="System Bold" size="49.0" />
+               </font>
+            </Label>
+            <HBox fx:id="gameOverBox" alignment="CENTER" prefHeight="100.0" prefWidth="200.0" spacing="20.0">
+               <children>
+                  <Button mnemonicParsing="false" onAction="#onPlayAgainClicked" text="Play Again" />
+                  <Button mnemonicParsing="false" onAction="#exitGame" text="Exit" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
     </children>
 </StackPane>

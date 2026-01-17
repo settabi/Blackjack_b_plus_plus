@@ -5,85 +5,82 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a270a01-cb92-48e7-a59f-965d810d6cc1" name="Changes" comment="first commit done by umut demirez.&#10;-changed the structure of the files. (renamed for efficient usability).&#10;-Created the Card class for the card objects which is probably the most core class in this project.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/10_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/10_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/10_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/10_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/2_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/2_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/2_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/2_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/3_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/3_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/3_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/3_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/4_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/4_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/4_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/4_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/5_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/5_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/5_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/5_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/6_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/6_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/6_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/6_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/7_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/7_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/7_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/7_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/8_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/8_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/8_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/8_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/9_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/9_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/9_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/9_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/Back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/ace_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/ace_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/ace_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/ace_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/ace_of_spades2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/black_joker.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/jack_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/jack_of_clubs2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/jack_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/jack_of_diamonds2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/jack_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/jack_of_hearts2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/jack_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/jack_of_spades2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/king_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/king_of_clubs2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/king_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/king_of_diamonds2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/king_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/king_of_hearts2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/king_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/king_of_spades2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/queen_of_clubs.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/queen_of_clubs2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/queen_of_diamonds.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/queen_of_diamonds2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/queen_of_hearts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/queen_of_hearts2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/queen_of_spades.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/queen_of_spades2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/red_joker.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Chips/100_chip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Chips/200_chip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Chips/500_chip.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/Images/Chips/50_chip.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/Launcher.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/controller/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/controller/BlackjackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Blackjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Dealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Hand.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Hand.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Partaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Partaker.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle.kts" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle.kts" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/controller/BlackjackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/controller/BlackjackController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/module-info.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/module-info.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/10_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/10_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/10_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/10_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/10_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/10_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/10_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/10_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/2_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/2_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/2_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/2_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/2_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/2_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/2_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/2_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/3_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/3_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/3_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/3_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/3_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/3_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/3_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/3_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/4_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/4_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/4_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/4_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/4_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/4_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/4_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/4_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/5_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/5_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/5_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/5_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/5_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/5_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/5_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/5_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/6_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/6_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/6_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/6_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/6_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/6_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/6_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/6_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/7_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/7_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/7_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/7_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/7_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/7_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/7_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/7_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/8_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/8_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/8_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/8_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/8_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/8_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/8_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/8_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/9_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/9_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/9_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/9_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/9_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/9_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/9_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/9_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/ace_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/ace_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/ace_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/ace_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/ace_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/ace_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/ace_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/ace_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/ace_of_spades2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/ace_of_spades2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/black_joker.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/black_joker.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/jack_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/jack_of_clubs2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_clubs2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/jack_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/jack_of_diamonds2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_diamonds2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/jack_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/jack_of_hearts2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_hearts2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/jack_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/jack_of_spades2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_spades2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/king_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/king_of_clubs2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_clubs2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/king_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/king_of_diamonds2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_diamonds2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/king_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/king_of_hearts2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_hearts2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/king_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/king_of_spades2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_spades2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/queen_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_clubs.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/queen_of_clubs2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_clubs2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/queen_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_diamonds.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/queen_of_diamonds2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_diamonds2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/queen_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_hearts.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/queen_of_hearts2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_hearts2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/queen_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_spades.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/queen_of_spades2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_spades2.png" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/red_joker.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/Images/Cards/red_joker.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/menu-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -120,6 +117,12 @@
                 <item name="Tasks" type="e4a08cd1:TasksNode" />
                 <item name="application" type="c8890929:TasksNode$1" />
               </path>
+              <path>
+                <item name="" type="6a2764b6:ExternalProjectsStructure$RootNode" />
+                <item name="Blackjack_b_plus_plus" type="f1a62948:ProjectNode" />
+                <item name="Tasks" type="e4a08cd1:TasksNode" />
+                <item name="build" type="c8890929:TasksNode$1" />
+              </path>
             </expand>
             <select />
           </tree_state>
@@ -152,10 +155,10 @@
   <component name="GithubPullRequestsUISettings">{
   &quot;selectedUrlAndAccountId&quot;: {
     &quot;url&quot;: &quot;https://github.com/umdeset/Blackjack_b_plus_plus.git&quot;,
-    &quot;accountId&quot;: &quot;d4875d84-523a-4460-9457-4513da86c36d&quot;
+    &quot;accountId&quot;: &quot;b042fd08-34c4-460c-9f99-957f93173386&quot;
   }
 }</component>
-  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13" javaHome="$USER_HOME$/Library/Java/JavaVirtualMachines/corretto-21.0.8-1/Contents/Home" gradleVersion="8.13" />
+  <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="C:\Users\user\.gradle\wrapper\dists\gradle-8.13-bin\5xuhj0ry160q40clulazy9h7d\gradle-8.13" javaHome="C:\Users\user\.jdks\corretto-21.0.8" gradleVersion="8.13" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
 }</component>
@@ -168,12 +171,13 @@
   "keyToString": {
     "Gradle.Blackjack_b_plus_plus [:at.ac.hcw.blackjack_b_plus_plus.BlackjackApp.main()].executor": "Run",
     "Gradle.Blackjack_b_plus_plus [:at.ac.hcw.blackjack_b_plus_plus.Launcher.main()].executor": "Run",
+    "Gradle.Blackjack_b_plus_plus [clean].executor": "Run",
     "Gradle.Blackjack_b_plus_plus [run].executor": "Run",
     "ModuleVcsDetector.initialDetectionPerformed": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "RunOnceActivity.git.unshallow": "true",
     "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "Game",
+    "git-widget-placeholder": "main",
     "kotlin-language-version-configured": "true",
     "last_opened_file_path": "/home/Asto/IdeaProjects/Blackjack_b_plus_plus/src/main/resources/Images/Cards",
     "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
@@ -185,6 +189,8 @@
       <recent name="$PROJECT_DIR$/src/main/resources/Images" />
     </key>
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\user\Desktop\Uni\Semester 1\Programmieren 1\Projekt\Blackjack_b_plus_plus\src\main\resources\Images\Cards" />
+      <recent name="C:\Users\user\Desktop\Uni\Semester 1\Programmieren 1\Projekt\Blackjack_b_plus_plus\src\main\resources\Images\Chips" />
       <recent name="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus" />
       <recent name="$PROJECT_DIR$/src/main/java/controller" />
     </key>
@@ -192,7 +198,7 @@
       <recent name="at.ac.hcw.blackjack_b_plus_plus" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Launcher">
+  <component name="RunManager" selected="Gradle.Blackjack_b_plus_plus [run]">
     <configuration name="BlackjackApp" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="at.ac.hcw.blackjack_b_plus_plus.BlackjackApp" />
       <module name="Blackjack_b_plus_plus.main" />
@@ -219,6 +225,28 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="Blackjack_b_plus_plus [clean]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
+      <ExternalSystemSettings>
+        <option name="executionName" />
+        <option name="externalProjectPath" value="$PROJECT_DIR$" />
+        <option name="externalSystemIdString" value="GRADLE" />
+        <option name="scriptParameters" />
+        <option name="taskDescriptions">
+          <list />
+        </option>
+        <option name="taskNames">
+          <list>
+            <option value="clean" />
+          </list>
+        </option>
+        <option name="vmOptions" />
+      </ExternalSystemSettings>
+      <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
+      <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
+      <DebugAllEnabled>false</DebugAllEnabled>
+      <RunAsTest>false</RunAsTest>
+      <method v="2" />
+    </configuration>
     <configuration name="Blackjack_b_plus_plus [run]" type="GradleRunConfiguration" factoryName="Gradle" temporary="true">
       <ExternalSystemSettings>
         <option name="executionName" />
@@ -237,21 +265,20 @@
       </ExternalSystemSettings>
       <ExternalSystemDebugServerProcess>true</ExternalSystemDebugServerProcess>
       <ExternalSystemReattachDebugProcess>true</ExternalSystemReattachDebugProcess>
-      <ExternalSystemDebugDisabled>false</ExternalSystemDebugDisabled>
       <DebugAllEnabled>false</DebugAllEnabled>
       <RunAsTest>false</RunAsTest>
-      <GradleProfilingDisabled>false</GradleProfilingDisabled>
-      <GradleCoverageDisabled>false</GradleCoverageDisabled>
       <method v="2" />
     </configuration>
     <list>
       <item itemvalue="Application.BlackjackApp" />
       <item itemvalue="Application.Launcher" />
+      <item itemvalue="Gradle.Blackjack_b_plus_plus [clean]" />
       <item itemvalue="Gradle.Blackjack_b_plus_plus [run]" />
     </list>
     <recent_temporary>
       <list>
         <item itemvalue="Gradle.Blackjack_b_plus_plus [run]" />
+        <item itemvalue="Gradle.Blackjack_b_plus_plus [clean]" />
         <item itemvalue="Application.Launcher" />
         <item itemvalue="Application.BlackjackApp" />
       </list>

@@ -44,4 +44,7 @@ public class Player extends Partaker {
     }
 
 
+    public void setBalance(int newBalance) {
+        this.balance = newBalance;
+    }
 }

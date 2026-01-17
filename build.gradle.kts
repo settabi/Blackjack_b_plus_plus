@@ -27,7 +27,7 @@ tasks.withType<JavaCompile> {
 
 application {
     mainModule.set("at.ac.hcw.blackjack_b_plus_plus")
-    mainClass.set("at.ac.hcw.blackjack_b_plus_plus.HelloApplication")
+    mainClass.set("at.ac.hcw.blackjack_b_plus_plus.BlackjackApp")
 }
 
 javafx {
