@@ -128,14 +128,14 @@ public class BlackjackController {
             rulesPane1.setVisible(true);
         });
         btnChangeSkinRight.setOnMouseClicked(e -> {
-            if(currentDealerSkin < countDealerSkins()) {
+            if (currentDealerSkin < countDealerSkins()) {
                 currentDealerSkin++;
                 updateDealerSkin();
             }
         });
 
         btnChangeSkinLeft.setOnMouseClicked(e -> {
-            if(currentDealerSkin > 1){
+            if (currentDealerSkin > 1) {
                 currentDealerSkin--;
                 updateDealerSkin();
             }
@@ -159,8 +159,14 @@ public class BlackjackController {
         btnStand.setOnMouseClicked(e -> standButton());
 
         // Game Over
-        btnPlayAgain.setOnMouseClicked(e -> {tempBetAmount = 0; onPlayAgainClicked();});
-        btnLeave.setOnMouseClicked(e -> {tempBetAmount = 0; switchToStartMenu();});
+        btnPlayAgain.setOnMouseClicked(e -> {
+            tempBetAmount = 0;
+            onPlayAgainClicked();
+        });
+        btnLeave.setOnMouseClicked(e -> {
+            tempBetAmount = 0;
+            switchToStartMenu();
+        });
     }
 
     private void initGame() {
@@ -410,7 +416,7 @@ public class BlackjackController {
     }
 
     public void updateDealerSkin() {
-        if(currentDealerSkin <= countDealerSkins() && currentDealerSkin > 0){
+        if (currentDealerSkin <= countDealerSkins() && currentDealerSkin > 0) {
             String path = "/at/ac/hcw/blackjack_b_plus_plus/images/dealer_skins/dealer_" + currentDealerSkin + ".png";
             Image newSkin = new Image(getClass().getResourceAsStream(path));
 
@@ -423,11 +429,11 @@ public class BlackjackController {
 
     private int countDealerSkins() {
         int count = 0;
-        while(true){
+        while (true) {
             String path = "/at/ac/hcw/blackjack_b_plus_plus/images/dealer_skins/dealer_" + (count + 1) + ".png";
-            if(getClass().getResource(path) != null){
+            if (getClass().getResource(path) != null) {
                 count++;
-            }else{
+            } else {
                 break;
             }
         }
