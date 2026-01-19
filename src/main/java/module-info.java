@@ -1,6 +1,7 @@
 module at.ac.hcw.blackjack_b_plus_plus {
     requires javafx.controls;
     requires javafx.fxml;
+    requires javafx.media;
 
 
     opens at.ac.hcw.blackjack_b_plus_plus to javafx.graphics, javafx.fxml;

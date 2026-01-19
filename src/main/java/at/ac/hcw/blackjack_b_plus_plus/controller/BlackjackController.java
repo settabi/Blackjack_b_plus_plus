@@ -16,7 +16,11 @@ import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.StackPane;
 import javafx.scene.layout.VBox;
+import javafx.scene.media.Media;
+import javafx.scene.media.MediaPlayer;
 
+import java.nio.file.Path;
+import java.nio.file.Paths;
 import java.util.Stack;
 
 public class BlackjackController {
@@ -106,6 +110,7 @@ public class BlackjackController {
         bettingGroup.setVisible(true);
         gameOverGroup.setVisible(false);
         resultLabel.setVisible(false);
+        backgroundMusic();
 
 
         // Menü
@@ -438,5 +443,25 @@ public class BlackjackController {
             }
         }
         return count;
+    }
+
+    private void backgroundMusic(){
+        var resource = getClass().getResource("/at/ac/hcw/blackjack_b_plus_plus/Music/Background_Music.mp3");
+
+        if(resource == null){
+            System.err.println("Musikfile nicht gefunden");
+            return;
+        }
+        //Pfad in benötigte "External Form" oder auch Uri umwandeln
+        String uri = resource.toExternalForm();
+
+        //Media und Mediaplayer erstellen
+        Media media = new Media(uri);
+        MediaPlayer mediaPlayer = new MediaPlayer(media);
+
+        //Endlosschleife
+        mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
+
+        mediaPlayer.play();
     }
 }
