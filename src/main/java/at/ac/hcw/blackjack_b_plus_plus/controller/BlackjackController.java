@@ -445,8 +445,9 @@ public class BlackjackController {
         return count;
     }
 
+    private MediaPlayer mediaPlayer;
     private void backgroundMusic(){
-        var resource = getClass().getResource("/at/ac/hcw/blackjack_b_plus_plus/Music/Background_Music.mp3");
+        var resource = getClass().getResource("/at/ac/hcw/blackjack_b_plus_plus/Music/Background_Music.wav");
 
         if(resource == null){
             System.err.println("Musikfile nicht gefunden");
@@ -457,7 +458,9 @@ public class BlackjackController {
 
         //Media und Mediaplayer erstellen
         Media media = new Media(uri);
-        MediaPlayer mediaPlayer = new MediaPlayer(media);
+        mediaPlayer = new MediaPlayer(media);
+
+        mediaPlayer.setVolume(0.10);
 
         //Endlosschleife
         mediaPlayer.setCycleCount(MediaPlayer.INDEFINITE);
