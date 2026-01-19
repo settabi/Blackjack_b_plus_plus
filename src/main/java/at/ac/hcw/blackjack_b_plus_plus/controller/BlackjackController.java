@@ -151,6 +151,16 @@ public class BlackjackController {
         btnAllIn.setOnMouseClicked(e -> onAllInClicked());
         betStack.setOnMouseClicked(e -> removeTopChip());
 
+        // Begrenzung auf 15 Zeichen
+        playerNameInput.textProperty().addListener((observable, oldValue, newValue) -> {
+            if (newValue.length() > 15) {
+                playerNameInput.setText(oldValue);
+            }
+        });
+
+        // Start-Button deaktivieren, wenn Feld leer ist
+        btnStartMenu.disableProperty().bind(playerNameInput.textProperty().isEmpty());
+
         // Spiel Starten
         btnStartGame.setOnMouseClicked(e -> onDealButtonClicked());
 
@@ -221,13 +231,25 @@ public class BlackjackController {
     private void endRound(String message) {
         System.out.println("Runde zu Ende: " + message);
         actionGroup.setVisible(false);
-        valueGroup.setVisible(false);
+
+        //valueGroup bleibt auf true, damit Summen sichtbar sind
+        valueGroup.setVisible(true);
         //reihenfolge gewechselt weil haben wir sonst die verdeckte karte von dealer gar nicht mehr gesehen
         gameOverGroup.setVisible(true);
         resultLabel.setText(message);
         resultLabel.setVisible(true);
         makeHandVisibleDealer();
         updateBalanceLabel();
+        updateHandValue();
+
+        // Play Again Button deaktivieren, wenn Balance 0 ist
+        if (player.getBalance() <= 0) {
+            btnPlayAgain.setDisable(true);
+            btnPlayAgain.setOpacity(0.5); // Optional: Optisches Feedback
+        } else {
+            btnPlayAgain.setDisable(false);
+            btnPlayAgain.setOpacity(1.0);
+        }
     }
 
     @FXML
@@ -411,8 +433,19 @@ public class BlackjackController {
     }
 
     public void updateHandValue() {
+//        playerHandValue.setText("Player Hand: \n" + player.getValue());
+//        dealerHandValue.setText("Dealer Hand: \n" + (dealer.getValue() - dealer.getHand().getCardValue(1)));
+
         playerHandValue.setText("Player Hand: \n" + player.getValue());
-        dealerHandValue.setText("Dealer Hand: \n" + (dealer.getValue() - dealer.getHand().getCardValue(1)));
+
+        // Prüfen, ob die Runde noch läuft (GameOverGroup ist noch unsichtbar)
+        if (!gameOverGroup.isVisible() && !dealer.getHand().getHandCards().isEmpty()) {
+            // Während des Spiels: Nur den Wert der ersten Karte zeigen
+            dealerHandValue.setText("Dealer Hand: \n" + dealer.getHand().getCardValue(0));
+        } else {
+            // Nach Spielende: Gesamtwert zeigen
+            dealerHandValue.setText("Dealer Hand: \n" + dealer.getValue());
+        }
     }
 
     public void updateDealerSkin() {

@@ -5,119 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a270a01-cb92-48e7-a59f-965d810d6cc1" name="Changes" comment="first commit done by umut demirez.&#10;-changed the structure of the files. (renamed for efficient usability).&#10;-Created the Card class for the card objects which is probably the most core class in this project.">
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/100_chip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/200_chip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/500_chip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/50_chip.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/Place_down_bet_circle_text.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/all_in_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/background_name_balance_player.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/btn_back.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/btn_close.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/btn_exit.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/btn_next.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/btn_rules.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/btn_start.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/clear_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/dealer_yumeko.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/dealername_background.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/hit_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/leave_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/musik.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/pfeil_nach_links.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/pfeil_nach_rechts.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/play_again_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/rules_content.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/rules_content_2.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/rules_header.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/stand_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/start_button.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/tisch.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/welcome.png" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/whole_deck.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/BlackjackApp.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/BlackjackApp.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/Launcher.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/Launcher.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/controller/BlackjackController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/controller/BlackjackController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Blackjack.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Blackjack.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Dealer.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Dealer.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Deck.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Deck.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Partaker.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Partaker.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/at/ac/hcw/blackjack_b_plus_plus/model/Player.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/10_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/10_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/10_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/10_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_10.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/2_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/2_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/2_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/2_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/3_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/3_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/3_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/3_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_3.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/4_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/4_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/4_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/4_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_4.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/5_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/5_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/5_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/5_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_5.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/6_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/6_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/6_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/6_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_6.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/7_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/7_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/7_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/7_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_7.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/8_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/8_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/8_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/8_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_8.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/9_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/9_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/9_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/9_of_spades.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_9.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/Back.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/back.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/ace_of_clubs.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_ace.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/ace_of_diamonds.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_ace.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/ace_of_hearts.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_ace.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/ace_of_spades.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/ace_of_spades2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_ace.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/black_joker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_clubs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_clubs2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_jack.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_diamonds.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_diamonds2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_jack.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_hearts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_hearts2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_jack.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_spades.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/jack_of_spades2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_jack.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_clubs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_clubs2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_king.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_diamonds.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_diamonds2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_king.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_hearts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_hearts2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_king.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_spades.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/king_of_spades2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_king.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_clubs.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_clubs2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/clubs_queen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_diamonds.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_diamonds2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/diamonds_queen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_hearts.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_hearts2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/hearts_queen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_spades.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/queen_of_spades2.png" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/images/cards/spades_queen.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Cards/red_joker.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Chips/100_chip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Chips/200_chip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Chips/500_chip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/Images/Chips/50_chip.png" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/menu-view.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/at/ac/hcw/blackjack_b_plus_plus/menu-view.fxml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -188,12 +77,12 @@
     &quot;assignee&quot;: &quot;settabi&quot;
   }
 }</component>
-  <component name="GithubPullRequestsUISettings"><![CDATA[{
-  "selectedUrlAndAccountId": {
-    "url": "https://github.com/umdeset/Blackjack_b_plus_plus.git",
-    "accountId": "a5c69edf-8bfc-4a41-8d40-a0244e449da7"
+  <component name="GithubPullRequestsUISettings">{
+  &quot;selectedUrlAndAccountId&quot;: {
+    &quot;url&quot;: &quot;https://github.com/umdeset/Blackjack_b_plus_plus.git&quot;,
+    &quot;accountId&quot;: &quot;b042fd08-34c4-460c-9f99-957f93173386&quot;
   }
-}]]></component>
+}</component>
   <component name="GradleScriptDefinitionsStorage" workingDir="$PROJECT_DIR$" gradleHome="$USER_HOME$/.gradle/wrapper/dists/gradle-8.13-bin/5xuhj0ry160q40clulazy9h7d/gradle-8.13" javaHome="$USER_HOME$/Library/Java/JavaVirtualMachines/corretto-21.0.8-1/Contents/Home" gradleVersion="8.13" />
   <component name="ProjectColorInfo">{
   &quot;associatedIndex&quot;: 1
@@ -203,22 +92,22 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "Gradle.Blackjack_b_plus_plus [:at.ac.hcw.blackjack_b_plus_plus.BlackjackApp.main()].executor": "Run",
-    "Gradle.Blackjack_b_plus_plus [:at.ac.hcw.blackjack_b_plus_plus.Launcher.main()].executor": "Run",
-    "Gradle.Blackjack_b_plus_plus [clean].executor": "Run",
-    "Gradle.Blackjack_b_plus_plus [run].executor": "Run",
-    "ModuleVcsDetector.initialDetectionPerformed": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "RunOnceActivity.git.unshallow": "true",
-    "SHARE_PROJECT_CONFIGURATION_FILES": "true",
-    "git-widget-placeholder": "main",
-    "kotlin-language-version-configured": "true",
-    "last_opened_file_path": "/Users/umutdemirez/Documents/Blackjack_b_plus_plus/src/main/resources",
-    "settings.editor.selected.configurable": "reference.settingsdialog.project.gradle"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;Gradle.Blackjack_b_plus_plus [:at.ac.hcw.blackjack_b_plus_plus.BlackjackApp.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Blackjack_b_plus_plus [:at.ac.hcw.blackjack_b_plus_plus.Launcher.main()].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Blackjack_b_plus_plus [clean].executor&quot;: &quot;Run&quot;,
+    &quot;Gradle.Blackjack_b_plus_plus [run].executor&quot;: &quot;Run&quot;,
+    &quot;ModuleVcsDetector.initialDetectionPerformed&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.git.unshallow&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;kotlin-language-version-configured&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/umutdemirez/Documents/Blackjack_b_plus_plus/src/main/resources&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;reference.settingsdialog.project.gradle&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/main/resources" />
