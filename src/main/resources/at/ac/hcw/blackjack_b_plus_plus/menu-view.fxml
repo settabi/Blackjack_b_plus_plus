@@ -9,38 +9,118 @@
 <?import javafx.scene.Cursor?>
 <?import javafx.scene.Group?>
 
-<StackPane fx:id="rootContainer" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.12" xmlns:fx="http://javafx.com/fxml/1" fx:controller="at.ac.hcw.blackjack_b_plus_plus.controller.BlackjackController">
+<StackPane fx:id="rootContainer" prefHeight="800.0" prefWidth="1280.0" xmlns="http://javafx.com/javafx/17.0.12"
+           xmlns:fx="http://javafx.com/fxml/1"
+           fx:controller="at.ac.hcw.blackjack_b_plus_plus.controller.BlackjackController">
     <children>
 
         <AnchorPane fx:id="gamePane" visible="false">
             <children>
-                <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
                     <children>
-                        <ImageView fitHeight="${rootContainer.height}" fitWidth="${rootContainer.width}" pickOnBounds="true" preserveRatio="false"><image><Image url="@images/background.png" /></image></ImageView>
-
-                        <ImageView fitWidth="1280.0" scaleX="0.33" scaleY="0.33" translateY="-115.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/dealer_yumeko.png" /></image></ImageView>
-                        <ImageView fitWidth="1280.0" scaleX="0.825" scaleY="0.825" translateY="100.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/tisch.png" /></image></ImageView>
-                        <ImageView fitWidth="1280.0" scaleX="0.074" scaleY="0.074" translateX="275.0" translateY="50.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/whole_deck.png" /></image></ImageView>
+                        <ImageView fitHeight="${rootContainer.height}" fitWidth="${rootContainer.width}"
+                                   pickOnBounds="true" preserveRatio="false">
+                            <image>
+                                <Image url="@images/background.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fx:id="dealer_skin" fitWidth="1280.0" scaleX="0.33" scaleY="0.33" translateY="-115.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@images/dealer_skins/dealer_1.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitWidth="1280.0" scaleX="0.825" scaleY="0.825" translateY="100.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/tisch.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitWidth="1280.0" scaleX="0.074" scaleY="0.074" translateX="275.0" translateY="50.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/whole_deck.png"/>
+                            </image>
+                        </ImageView>
 
                         <StackPane pickOnBounds="false">
                             <children>
-                                <HBox fx:id="dealerHandBox" alignment="CENTER" spacing="10.0" translateY="50" maxHeight="100.0" maxWidth="600.0" pickOnBounds="false" />
-                                <HBox fx:id="playerHandBox" alignment="CENTER" spacing="10.0" translateY="220.0" maxHeight="100.0" maxWidth="600.0" pickOnBounds="false" />
+                                <HBox fx:id="dealerHandBox" alignment="CENTER" spacing="10.0" translateY="50"
+                                      maxHeight="100.0" maxWidth="600.0" pickOnBounds="false"/>
+                                <HBox fx:id="playerHandBox" alignment="CENTER" spacing="10.0" translateY="220.0"
+                                      maxHeight="100.0" maxWidth="600.0" pickOnBounds="false"/>
                             </children>
                         </StackPane>
 
-                        <StackPane fx:id="actionOverlay" translateX="-250.0" translateY="100.0" pickOnBounds="false">
+                        <StackPane translateX="-250.0" translateY="100.0" pickOnBounds="false">
                             <children>
-                                <VBox fx:id="actionGroup" visible="false" alignment="CENTER" spacing="20.0" pickOnBounds="false">
+                                <VBox fx:id="valueGroup" visible="false" alignment="CENTER" spacing="20.0">
                                     <children>
-                                        <ImageView fx:id="btnHit" fitWidth="150.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/hit_button.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
-                                        <ImageView fx:id="btnStand" fitWidth="150.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/stand_button.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
+                                        <Label fx:id="dealerHandValue" text="Dealer Hand: " translateX="150" translateY="60"
+                                               textFill="white">
+                                            <font>
+                                                <Font name="Times New Roman" size="15.0"/>
+                                            </font>
+                                            <effect>
+                                                <DropShadow color="#000000a6"/>
+                                            </effect>
+                                        </Label>
+                                        <Label fx:id="playerHandValue" text="Player Hand: " translateX="370"
+                                               textFill="white">
+                                            <font>
+                                                <Font name="Times New Roman" size="15.0"/>
+                                            </font>
+                                            <effect>
+                                                <DropShadow color="#000000a6"/>
+                                            </effect>
+                                        </Label>
                                     </children>
                                 </VBox>
-                                <VBox fx:id="gameOverGroup" visible="false" alignment="CENTER" spacing="20.0" pickOnBounds="false">
+                                <VBox fx:id="actionGroup" visible="false" alignment="CENTER" spacing="20.0"
+                                      pickOnBounds="false">
                                     <children>
-                                        <ImageView fx:id="btnPlayAgain" fitWidth="150.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/play_again_button.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
-                                        <ImageView fx:id="btnLeave" fitWidth="150.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/leave_button.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
+                                        <ImageView fx:id="btnHit" fitWidth="150.0" pickOnBounds="true"
+                                                   preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/hit_button.png"/>
+                                            </image>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND"/>
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="btnStand" fitWidth="150.0" pickOnBounds="true"
+                                                   preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/stand_button.png"/>
+                                            </image>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND"/>
+                                            </cursor>
+                                        </ImageView>
+                                    </children>
+                                </VBox>
+                                <VBox fx:id="gameOverGroup" visible="false" alignment="CENTER" spacing="20.0"
+                                      pickOnBounds="false">
+                                    <children>
+                                        <ImageView fx:id="btnPlayAgain" fitWidth="150.0" pickOnBounds="true"
+                                                   preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/play_again_button.png"/>
+                                            </image>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND"/>
+                                            </cursor>
+                                        </ImageView>
+                                        <ImageView fx:id="btnLeave" fitWidth="150.0" pickOnBounds="true"
+                                                   preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/leave_button.png"/>
+                                            </image>
+                                            <cursor>
+                                                <Cursor fx:constant="HAND"/>
+                                            </cursor>
+                                        </ImageView>
                                     </children>
                                 </VBox>
                             </children>
@@ -50,17 +130,118 @@
                             <children>
                                 <StackPane prefHeight="800.0" prefWidth="1280.0" pickOnBounds="false">
                                     <children>
-                                        <ImageView fitWidth="1280.0" scaleX="0.3" scaleY="0.3" translateY="100.0" pickOnBounds="false" preserveRatio="true"><image><Image url="@images/Place_down_bet_circle_text.png" /></image></ImageView>
-                                        <StackPane fx:id="betStack" maxHeight="120.0" maxWidth="120.0" translateY="125.0" pickOnBounds="true"><cursor><Cursor fx:constant="HAND" /></cursor></StackPane>
+                                        <Label fx:id="playerBetLabel" text="Current Bet: 0" translateY="10"
+                                               textFill="white">
+                                            <font>
+                                                <Font name="Times New Roman" size="24.0"/>
+                                            </font>
+                                            <effect>
+                                                <DropShadow color="#000000a6"/>
+                                            </effect>
+                                        </Label>
                                         <StackPane pickOnBounds="false">
                                             <children>
-                                                <ImageView fx:id="btnAllIn" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" translateX="-165.0" translateY="130.0"><image><Image url="@images/all_in_button.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
-                                                <ImageView fx:id="btnClear" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" translateX="165.0" translateY="130.0"><image><Image url="@images/clear_button.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
-                                                <ImageView fx:id="btnStartGame" fitWidth="120.0" pickOnBounds="true" preserveRatio="true" translateY="205.0"><image><Image url="@images/start_button.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
-                                                <ImageView fx:id="chip500" fitWidth="85.0" fitHeight="85.0" pickOnBounds="true" preserveRatio="true" translateX="-160.0" translateY="240.0"><image><Image url="@images/500_chip.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
-                                                <ImageView fx:id="chip200" fitWidth="85.0" fitHeight="85.0" pickOnBounds="true" preserveRatio="true" translateX="-60.0" translateY="265.0"><image><Image url="@images/200_chip.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
-                                                <ImageView fx:id="chip100" fitWidth="85.0" fitHeight="85.0" pickOnBounds="true" preserveRatio="true" translateX="60.0" translateY="265.0"><image><Image url="@images/100_chip.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
-                                                <ImageView fx:id="chip50" fitWidth="85.0" fitHeight="85.0" pickOnBounds="true" preserveRatio="true" translateX="160.0" translateY="240.0"><image><Image url="@images/50_chip.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
+                                                <ImageView fx:id="btnChangeSkinRight" fitWidth="60.0" pickOnBounds="true"
+                                                           preserveRatio="true" translateX="200.0" translateY="-200">
+                                                    <image>
+                                                        <Image url="@images/pfeil_nach_rechts.png"/>
+                                                    </image>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND"/>
+                                                    </cursor>
+                                                </ImageView>
+                                                <ImageView fx:id="btnChangeSkinLeft" fitWidth="60.0" pickOnBounds="true"
+                                                           preserveRatio="true" translateX="-200.0" translateY="-200">
+                                                    <image>
+                                                        <Image url="@images/pfeil_nach_links.png"/>
+                                                    </image>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND"/>
+                                                    </cursor>
+                                                </ImageView>
+                                            </children>
+                                        </StackPane>
+                                        <ImageView fitWidth="1280.0" scaleX="0.3" scaleY="0.3" translateY="100.0"
+                                                   pickOnBounds="false" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/Place_down_bet_circle_text.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <StackPane fx:id="betStack" maxHeight="120.0" maxWidth="120.0"
+                                                   translateY="125.0" pickOnBounds="true">
+                                            <cursor>
+                                                <Cursor fx:constant="HAND"/>
+                                            </cursor>
+                                        </StackPane>
+                                        <StackPane pickOnBounds="false">
+                                            <children>
+                                                <ImageView fx:id="btnAllIn" fitWidth="120.0" pickOnBounds="true"
+                                                           preserveRatio="true" translateX="-165.0" translateY="130.0">
+                                                    <image>
+                                                        <Image url="@images/all_in_button.png"/>
+                                                    </image>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND"/>
+                                                    </cursor>
+                                                </ImageView>
+                                                <ImageView fx:id="btnClear" fitWidth="120.0" pickOnBounds="true"
+                                                           preserveRatio="true" translateX="165.0" translateY="130.0">
+                                                    <image>
+                                                        <Image url="@images/clear_button.png"/>
+                                                    </image>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND"/>
+                                                    </cursor>
+                                                </ImageView>
+                                                <ImageView fx:id="btnStartGame" fitWidth="120.0" pickOnBounds="true"
+                                                           preserveRatio="true" translateY="205.0">
+                                                    <image>
+                                                        <Image url="@images/start_button.png"/>
+                                                    </image>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND"/>
+                                                    </cursor>
+                                                </ImageView>
+                                                <ImageView fx:id="chip500" fitWidth="85.0" fitHeight="85.0"
+                                                           pickOnBounds="true" preserveRatio="true" translateX="-160.0"
+                                                           translateY="240.0">
+                                                    <image>
+                                                        <Image url="@images/500_chip.png"/>
+                                                    </image>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND"/>
+                                                    </cursor>
+                                                </ImageView>
+                                                <ImageView fx:id="chip200" fitWidth="85.0" fitHeight="85.0"
+                                                           pickOnBounds="true" preserveRatio="true" translateX="-60.0"
+                                                           translateY="265.0">
+                                                    <image>
+                                                        <Image url="@images/200_chip.png"/>
+                                                    </image>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND"/>
+                                                    </cursor>
+                                                </ImageView>
+                                                <ImageView fx:id="chip100" fitWidth="85.0" fitHeight="85.0"
+                                                           pickOnBounds="true" preserveRatio="true" translateX="60.0"
+                                                           translateY="265.0">
+                                                    <image>
+                                                        <Image url="@images/100_chip.png"/>
+                                                    </image>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND"/>
+                                                    </cursor>
+                                                </ImageView>
+                                                <ImageView fx:id="chip50" fitWidth="85.0" fitHeight="85.0"
+                                                           pickOnBounds="true" preserveRatio="true" translateX="160.0"
+                                                           translateY="240.0">
+                                                    <image>
+                                                        <Image url="@images/50_chip.png"/>
+                                                    </image>
+                                                    <cursor>
+                                                        <Cursor fx:constant="HAND"/>
+                                                    </cursor>
+                                                </ImageView>
                                             </children>
                                         </StackPane>
                                     </children>
@@ -71,23 +252,79 @@
                         <AnchorPane pickOnBounds="false">
                             <children>
 
-                                <StackPane alignment="CENTER_LEFT" translateY="175.0" AnchorPane.leftAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                <StackPane alignment="CENTER_LEFT" translateY="175.0" AnchorPane.leftAnchor="0.0"
+                                           AnchorPane.topAnchor="0.0">
                                     <children>
-                                        <ImageView fitWidth="400.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/background_name_balance_player.png" /></image></ImageView>
+                                        <ImageView fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/background_name_balance_player.png"/>
+                                            </image>
+                                        </ImageView>
                                         <VBox alignment="CENTER_LEFT" spacing="2.0">
                                             <children>
-                                                <Label fx:id="playerNameLabel" text="Player: Name" textFill="white"><font><Font name="Times New Roman" size="24.0" /></font><effect><DropShadow color="#000000a6" height="5.0" radius="2.0" width="5.0" /></effect></Label>
-                                                <Label fx:id="playerBalanceLabel" text="Balance: 1000$" textFill="white"><font><Font name="Times New Roman" size="24.0" /></font><effect><DropShadow color="#000000a6" height="5.0" radius="2.0" width="5.0" /></effect></Label>
+                                                <Label fx:id="playerNameLabel" text="Player: Name" textFill="white">
+                                                    <font>
+                                                        <Font name="Times New Roman" size="24.0"/>
+                                                    </font>
+                                                    <effect>
+                                                        <DropShadow color="#000000a6" height="5.0" radius="2.0"
+                                                                    width="5.0"/>
+                                                    </effect>
+                                                </Label>
+                                                <Label fx:id="playerBalanceLabel" text="Balance: 1000$"
+                                                       textFill="white">
+                                                    <font>
+                                                        <Font name="Times New Roman" size="24.0"/>
+                                                    </font>
+                                                    <effect>
+                                                        <DropShadow color="#000000a6" height="5.0" radius="2.0"
+                                                                    width="5.0"/>
+                                                    </effect>
+                                                </Label>
                                             </children>
-                                            <padding><Insets left="110.0" top="4.0" bottom="5.0" /></padding>
+                                            <padding>
+                                                <Insets left="110.0" top="4.0" bottom="5.0"/>
+                                            </padding>
                                         </VBox>
                                     </children>
                                 </StackPane>
 
-                                <Label fx:id="resultLabel" text="" textFill="#ffcc00" AnchorPane.leftAnchor="80.0" AnchorPane.topAnchor="425.0">
-                                    <font><Font name="Times New Roman" size="26.0" /></font>
-                                    <effect><DropShadow color="black" radius="3.0" /></effect>
+                                <Label fx:id="resultLabel" text="" textFill="#ffcc00" AnchorPane.leftAnchor="80.0"
+                                       AnchorPane.topAnchor="425.0">
+                                    <font>
+                                        <Font name="Times New Roman" size="26.0"/>
+                                    </font>
+                                    <effect>
+                                        <DropShadow color="black" radius="3.0"/>
+                                    </effect>
                                 </Label>
+                                <StackPane alignment="BOTTOM_LEFT" translateY="850.0" AnchorPane.leftAnchor="0.0"
+                                           AnchorPane.topAnchor="0.0">
+                                    <children>
+                                        <ImageView fitWidth="400.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/background_name_balance_player.png"/>
+                                            </image>
+                                        </ImageView>
+                                        <VBox alignment="CENTER_LEFT" spacing="2.0">
+                                            <children>
+                                                <Label fx:id="playerBetLabel2" text="Bet: 0"
+                                                       textFill="white">
+                                                    <font>
+                                                        <Font name="Times New Roman" size="24.0"/>
+                                                    </font>
+                                                    <effect>
+                                                        <DropShadow color="#000000a6" height="5.0" radius="2.0"
+                                                                    width="5.0"/>
+                                                    </effect>
+                                                </Label>
+                                            </children>
+                                            <padding>
+                                                <Insets left="110.0" top="4.0" bottom="5.0"/>
+                                            </padding>
+                                        </VBox>
+                                    </children>
+                                </StackPane>
 
                             </children>
                         </AnchorPane>
@@ -98,19 +335,55 @@
 
         <AnchorPane fx:id="rulesPane2" visible="false">
             <children>
-                <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
                     <children>
-                        <ImageView fitHeight="${rootContainer.height}" fitWidth="${rootContainer.width}" pickOnBounds="true" preserveRatio="false"><image><Image url="@images/background.png" /></image></ImageView>
+                        <ImageView fitHeight="${rootContainer.height}" fitWidth="${rootContainer.width}"
+                                   pickOnBounds="true" preserveRatio="false">
+                            <image>
+                                <Image url="@images/background.png"/>
+                            </image>
+                        </ImageView>
                         <AnchorPane>
                             <children>
-                                <HBox alignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
-                                    <children><ImageView fitHeight="100.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/rules_header.png" /></image></ImageView></children>
+                                <HBox alignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                      AnchorPane.topAnchor="30.0">
+                                    <children>
+                                        <ImageView fitHeight="100.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/rules_header.png"/>
+                                            </image>
+                                        </ImageView>
+                                    </children>
                                 </HBox>
-                                <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" pickOnBounds="false">
-                                    <children><ImageView fitWidth="1035.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/rules_content_2.png" /></image></ImageView></children>
+                                <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" pickOnBounds="false">
+                                    <children>
+                                        <ImageView fitWidth="1035.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/rules_content_2.png"/>
+                                            </image>
+                                        </ImageView>
+                                    </children>
                                 </StackPane>
-                                <ImageView fx:id="btnCloseRules2" fitHeight="60.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/btn_close.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
-                                <ImageView fx:id="btnBackRules" fitHeight="60.0" AnchorPane.bottomAnchor="40.0" AnchorPane.leftAnchor="40.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/btn_back.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
+                                <ImageView fx:id="btnCloseRules2" fitHeight="60.0" AnchorPane.rightAnchor="40.0"
+                                           AnchorPane.topAnchor="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/btn_close.png"/>
+                                    </image>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND"/>
+                                    </cursor>
+                                </ImageView>
+                                <ImageView fx:id="btnBackRules" fitHeight="60.0" AnchorPane.bottomAnchor="40.0"
+                                           AnchorPane.leftAnchor="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/btn_back.png"/>
+                                    </image>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND"/>
+                                    </cursor>
+                                </ImageView>
                             </children>
                         </AnchorPane>
                     </children>
@@ -120,19 +393,55 @@
 
         <AnchorPane fx:id="rulesPane1" visible="false">
             <children>
-                <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
                     <children>
-                        <ImageView fitHeight="${rootContainer.height}" fitWidth="${rootContainer.width}" pickOnBounds="true" preserveRatio="false"><image><Image url="@images/background.png" /></image></ImageView>
+                        <ImageView fitHeight="${rootContainer.height}" fitWidth="${rootContainer.width}"
+                                   pickOnBounds="true" preserveRatio="false">
+                            <image>
+                                <Image url="@images/background.png"/>
+                            </image>
+                        </ImageView>
                         <AnchorPane>
                             <children>
-                                <HBox alignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="30.0">
-                                    <children><ImageView fitHeight="100.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/rules_header.png" /></image></ImageView></children>
+                                <HBox alignment="CENTER" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                                      AnchorPane.topAnchor="30.0">
+                                    <children>
+                                        <ImageView fitHeight="100.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/rules_header.png"/>
+                                            </image>
+                                        </ImageView>
+                                    </children>
                                 </HBox>
-                                <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" pickOnBounds="false">
-                                    <children><ImageView fitWidth="1035.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/rules_content.png" /></image></ImageView></children>
+                                <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0"
+                                           AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0" pickOnBounds="false">
+                                    <children>
+                                        <ImageView fitWidth="1035.0" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/rules_content.png"/>
+                                            </image>
+                                        </ImageView>
+                                    </children>
                                 </StackPane>
-                                <ImageView fx:id="btnCloseRules1" fitHeight="60.0" AnchorPane.rightAnchor="40.0" AnchorPane.topAnchor="40.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/btn_close.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
-                                <ImageView fx:id="btnNextRules" fitHeight="60.0" AnchorPane.bottomAnchor="40.0" AnchorPane.rightAnchor="40.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/btn_next.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
+                                <ImageView fx:id="btnCloseRules1" fitHeight="60.0" AnchorPane.rightAnchor="40.0"
+                                           AnchorPane.topAnchor="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/btn_close.png"/>
+                                    </image>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND"/>
+                                    </cursor>
+                                </ImageView>
+                                <ImageView fx:id="btnNextRules" fitHeight="60.0" AnchorPane.bottomAnchor="40.0"
+                                           AnchorPane.rightAnchor="40.0" pickOnBounds="true" preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/btn_next.png"/>
+                                    </image>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND"/>
+                                    </cursor>
+                                </ImageView>
                             </children>
                         </AnchorPane>
                     </children>
@@ -142,30 +451,91 @@
 
         <AnchorPane fx:id="menuPane" visible="true">
             <children>
-                <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                <StackPane AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0"
+                           AnchorPane.topAnchor="0.0">
                     <children>
-                        <ImageView fitHeight="${rootContainer.height}" fitWidth="${rootContainer.width}" pickOnBounds="true" preserveRatio="false"><image><Image url="@images/background.png" /></image></ImageView>
+                        <ImageView fitHeight="${rootContainer.height}" fitWidth="${rootContainer.width}"
+                                   pickOnBounds="true" preserveRatio="false">
+                            <image>
+                                <Image url="@images/background.png"/>
+                            </image>
+                        </ImageView>
 
-                        <ImageView fitWidth="1280.0" scaleX="0.30" scaleY="0.30" translateY="-115.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/dealer_yumeko.png" /></image></ImageView>
-                        <ImageView fitWidth="1280.0" scaleX="0.75" scaleY="0.75" translateY="100.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/tisch.png" /></image></ImageView>
-                        <ImageView fitWidth="1280.0" scaleX="0.09" scaleY="0.09" translateX="250.0" translateY="50.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/whole_deck.png" /></image></ImageView>
+                        <ImageView fitWidth="1280.0" scaleX="0.30" scaleY="0.30" translateY="-115.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@images/dealer_yumeko.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitWidth="1280.0" scaleX="0.75" scaleY="0.75" translateY="100.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@images/tisch.png"/>
+                            </image>
+                        </ImageView>
+                        <ImageView fitWidth="1280.0" scaleX="0.09" scaleY="0.09" translateX="250.0" translateY="50.0"
+                                   pickOnBounds="true" preserveRatio="true">
+                            <image>
+                                <Image url="@images/whole_deck.png"/>
+                            </image>
+                        </ImageView>
 
-                        <ImageView fitHeight="${rootContainer.height}" fitWidth="${rootContainer.width}" opacity="0.95" pickOnBounds="true" preserveRatio="false"><image><Image url="@images/background.png" /></image></ImageView>
+                        <ImageView fitHeight="${rootContainer.height}" fitWidth="${rootContainer.width}" opacity="0.95"
+                                   pickOnBounds="true" preserveRatio="false">
+                            <image>
+                                <Image url="@images/background.png"/>
+                            </image>
+                        </ImageView>
 
-                        <ImageView fitWidth="1280.0" scaleX="0.4" scaleY="0.4" translateY="-250.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/welcome.png" /></image></ImageView>
+                        <ImageView fitWidth="1280.0" scaleX="0.4" scaleY="0.4" translateY="-250.0" pickOnBounds="true"
+                                   preserveRatio="true">
+                            <image>
+                                <Image url="@images/welcome.png"/>
+                            </image>
+                        </ImageView>
 
                         <VBox alignment="CENTER" spacing="10.0" translateY="-20.0" pickOnBounds="false">
                             <children>
-                                <Label text="Player Name:" textFill="white"><font><Font name="System Bold" size="24.0" /></font></Label>
-                                <TextField fx:id="playerNameInput" maxWidth="300.0" prefHeight="50.0" alignment="CENTER" promptText="Enter your name..." style="-fx-background-color: rgba(0, 0, 0, 0.7); -fx-text-fill: white; -fx-background-radius: 10; -fx-border-color: #d4af37; -fx-border-radius: 10; -fx-font-size: 20px;" />
+                                <Label text="Player Name:" textFill="white">
+                                    <font>
+                                        <Font name="System Bold" size="24.0"/>
+                                    </font>
+                                </Label>
+                                <TextField fx:id="playerNameInput" maxWidth="300.0" prefHeight="50.0" alignment="CENTER"
+                                           promptText="Enter your name..."
+                                           style="-fx-background-color: rgba(0, 0, 0, 0.7); -fx-text-fill: white; -fx-background-radius: 10; -fx-border-color: #d4af37; -fx-border-radius: 10; -fx-font-size: 20px;"/>
                             </children>
                         </VBox>
 
                         <HBox alignment="CENTER" spacing="100.0" translateY="250.0" pickOnBounds="false">
                             <children>
-                                <ImageView fx:id="btnRulesMenu" fitHeight="97.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/btn_rules.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
-                                <ImageView fx:id="btnStartMenu" fitHeight="97.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/btn_start.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
-                                <ImageView fx:id="btnExitMenu" fitHeight="97.0" pickOnBounds="true" preserveRatio="true"><image><Image url="@images/btn_exit.png" /></image><cursor><Cursor fx:constant="HAND" /></cursor></ImageView>
+                                <ImageView fx:id="btnRulesMenu" fitHeight="97.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/btn_rules.png"/>
+                                    </image>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND"/>
+                                    </cursor>
+                                </ImageView>
+                                <ImageView fx:id="btnStartMenu" fitHeight="97.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/btn_start.png"/>
+                                    </image>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND"/>
+                                    </cursor>
+                                </ImageView>
+                                <ImageView fx:id="btnExitMenu" fitHeight="97.0" pickOnBounds="true"
+                                           preserveRatio="true">
+                                    <image>
+                                        <Image url="@images/btn_exit.png"/>
+                                    </image>
+                                    <cursor>
+                                        <Cursor fx:constant="HAND"/>
+                                    </cursor>
+                                </ImageView>
                             </children>
                         </HBox>
                     </children>
