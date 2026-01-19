@@ -5,6 +5,7 @@ import at.ac.hcw.blackjack_b_plus_plus.model.Card;
 import at.ac.hcw.blackjack_b_plus_plus.model.Dealer;
 import at.ac.hcw.blackjack_b_plus_plus.model.Player;
 import javafx.application.Platform;
+import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.Group;
 import javafx.scene.control.Label;
@@ -20,51 +21,75 @@ import java.util.Stack;
 
 public class BlackjackController {
 
-    @FXML public Label playerBetLabel;
-    @FXML private AnchorPane StartMenu;
-    @FXML private AnchorPane RulesMenu;
-    @FXML private AnchorPane GameMenu;
-    @FXML private Group PreGameMenu;
+    @FXML
+    public Label playerBetLabel;
+    @FXML
+    public Label playerBetLabel2;
+    @FXML
+    public Label playerHandValue;
+    @FXML
+    public Label dealerHandValue;
+    @FXML
+    public VBox valueGroup;
+    @FXML
+    public ImageView dealer_skin;
+    @FXML
+    public ImageView btnChangeSkinRight;
+    @FXML
+    public ImageView btnChangeSkinLeft;
+    @FXML
+    private AnchorPane menuPane;
+    @FXML
+    private AnchorPane rulesPane1;
+    @FXML
+    private AnchorPane rulesPane2;
+    @FXML
+    private AnchorPane gamePane;
+    @FXML
+    private Group bettingGroup;
 
-    @FXML private Label balanceLabel;
-    @FXML private Label winnerLabel;
-    @FXML private Label dealerValueLabel;
+    @FXML
+    private Label playerBalanceLabel;
+    @FXML
+    private Label resultLabel;
 
-    @FXML private HBox dealerHand;
-    @FXML private HBox playerHand;
+    @FXML
+    private HBox dealerHandBox;
+    @FXML
+    private HBox playerHandBox;
 
-    @FXML private ImageView btnHit;
-    @FXML private ImageView btnStand;
+    @FXML
+    private ImageView btnHit;
+    @FXML
+    private ImageView btnStand;
 
-    @FXML private VBox gameOverBox;
-    @FXML private VBox actionBox;
+    @FXML
+    private VBox gameOverGroup;
+    @FXML
+    private VBox actionGroup;
 
-    @FXML private TextField playerNameInput;
+    @FXML
+    private TextField playerNameInput;
     private int tempBetAmount = 0;
+    private int currentDealerSkin = 1;
 
 
-    @FXML private AnchorPane menuPane;
-    @FXML private AnchorPane rulesPane1;
-    @FXML private AnchorPane rulesPane2;
-    @FXML private AnchorPane gamePane;
-    @FXML private Group bettingGroup;
-    @FXML private Label playerBalanceLabel;
-    @FXML private Label resultLabel;
-    @FXML private HBox dealerHandBox;
-    @FXML private HBox playerHandBox;
-    @FXML private VBox gameOverGroup;
-    @FXML private VBox actionGroup;
+    @FXML
+    private ImageView btnStartMenu, btnRulesMenu, btnExitMenu;
+    @FXML
+    private ImageView btnCloseRules1, btnNextRules, btnCloseRules2, btnBackRules;
+    @FXML
+    private ImageView btnPlayAgain, btnLeave;
+    @FXML
+    private ImageView btnAllIn, btnClear, btnStartGame;
+    @FXML
+    private ImageView chip50, chip100, chip200, chip500;
+    @FXML
+    private StackPane betStack;
+    @FXML
+    private Label playerNameLabel;
 
-
-    @FXML private ImageView btnStartMenu, btnRulesMenu, btnExitMenu;
-    @FXML private ImageView btnCloseRules1, btnNextRules, btnCloseRules2, btnBackRules;
-    @FXML private ImageView btnPlayAgain, btnLeave;
-    @FXML private ImageView btnAllIn, btnClear, btnStartGame;
-    @FXML private ImageView chip50, chip100, chip200, chip500;
-    @FXML private StackPane betStack;
-    @FXML private Label playerNameLabel;
-
-   //logik, falls fehler sind ändert einfach
+    //logik, falls fehler sind ändert einfach
     private Blackjack blackjack;
     private Player player;
     private Dealer dealer;
@@ -74,24 +99,13 @@ public class BlackjackController {
 
     @FXML
     public void initialize() {
-        StartMenu = menuPane;
-        RulesMenu = rulesPane1;
-        GameMenu = gamePane;
-        PreGameMenu = bettingGroup;
-        balanceLabel = playerBalanceLabel;
-        winnerLabel = resultLabel;
-        dealerHand = dealerHandBox;
-        playerHand = playerHandBox;
-        gameOverBox = gameOverGroup;
-        actionBox = actionGroup;
+        rulesPane1.setVisible(false);
+        menuPane.setVisible(true);
+        gamePane.setVisible(false);
 
-        RulesMenu.setVisible(false);
-        StartMenu.setVisible(true);
-        GameMenu.setVisible(false);
-
-        PreGameMenu.setVisible(true);
-        gameOverBox.setVisible(false);
-        winnerLabel.setVisible(false);
+        bettingGroup.setVisible(true);
+        gameOverGroup.setVisible(false);
+        resultLabel.setVisible(false);
 
 
         // Menü
@@ -104,9 +118,28 @@ public class BlackjackController {
 
         // Regeln
         btnCloseRules1.setOnMouseClicked(e -> switchToStartMenu());
-        btnNextRules.setOnMouseClicked(e -> { RulesMenu.setVisible(false); rulesPane2.setVisible(true); });
+        btnNextRules.setOnMouseClicked(e -> {
+            rulesPane1.setVisible(false);
+            rulesPane2.setVisible(true);
+        });
         btnCloseRules2.setOnMouseClicked(e -> switchToStartMenu());
-        btnBackRules.setOnMouseClicked(e -> { rulesPane2.setVisible(false); RulesMenu.setVisible(true); });
+        btnBackRules.setOnMouseClicked(e -> {
+            rulesPane2.setVisible(false);
+            rulesPane1.setVisible(true);
+        });
+        btnChangeSkinRight.setOnMouseClicked(e -> {
+            if(currentDealerSkin < countDealerSkins()) {
+                currentDealerSkin++;
+                updateDealerSkin();
+            }
+        });
+
+        btnChangeSkinLeft.setOnMouseClicked(e -> {
+            if(currentDealerSkin > 1){
+                currentDealerSkin--;
+                updateDealerSkin();
+            }
+        });
 
         // Chips
         setupChipEvent(chip50, 50);
@@ -135,8 +168,8 @@ public class BlackjackController {
         player = blackjack.getPlayer();
         dealer = blackjack.getDealer();
 
-        StartMenu.setVisible(false);
-        GameMenu.setVisible(true);
+        menuPane.setVisible(false);
+        gamePane.setVisible(true);
 
         onPlayAgainClicked();
         playerNameLabel.setText("Player: " + savedPlayerName);
@@ -148,6 +181,7 @@ public class BlackjackController {
     protected void hitButton() {
         blackjack.playerHit();
         makeHandVisiblePlayer();
+        updateHandValue();
 
         if (player.getScore() > 21) {
             endRound("BUSTED! Dealer wins.");
@@ -180,11 +214,12 @@ public class BlackjackController {
 
     private void endRound(String message) {
         System.out.println("Runde zu Ende: " + message);
-        actionBox.setVisible(false);
+        actionGroup.setVisible(false);
+        valueGroup.setVisible(false);
         //reihenfolge gewechselt weil haben wir sonst die verdeckte karte von dealer gar nicht mehr gesehen
-        gameOverBox.setVisible(true);
-        winnerLabel.setText(message);
-        winnerLabel.setVisible(true);
+        gameOverGroup.setVisible(true);
+        resultLabel.setText(message);
+        resultLabel.setVisible(true);
         makeHandVisibleDealer();
         updateBalanceLabel();
     }
@@ -194,14 +229,16 @@ public class BlackjackController {
         if (tempBetAmount > 0 && tempBetAmount <= player.getBalance()) {
             blackjack.startRound(tempBetAmount);
 
-            PreGameMenu.setVisible(false);
-            actionBox.setVisible(true);
-            gameOverBox.setVisible(false);
-            winnerLabel.setText("");
+            bettingGroup.setVisible(false);
+            actionGroup.setVisible(true);
+            valueGroup.setVisible(true);
+            gameOverGroup.setVisible(false);
+            resultLabel.setText("");
 
             makeHandVisiblePlayer();
             makeHandVisibleDealer();
             updateBalanceLabel();
+            updateHandValue();
 
             if (player.getScore() == 21) {
                 standButton();
@@ -217,36 +254,37 @@ public class BlackjackController {
         betHistory.clear();
         betStack.getChildren().clear();
 
-        winnerLabel.setText("");
-        winnerLabel.setVisible(false);
-        dealerHand.getChildren().clear();
-        playerHand.getChildren().clear();
+        resultLabel.setText("");
+        resultLabel.setVisible(false);
+        dealerHandBox.getChildren().clear();
+        playerHandBox.getChildren().clear();
 
-        gameOverBox.setVisible(false);
-        actionBox.setVisible(false);
+        gameOverGroup.setVisible(false);
+        actionGroup.setVisible(false);
+        valueGroup.setVisible(false);
 
-        PreGameMenu.setVisible(true);
+        bettingGroup.setVisible(true);
         updateBalanceLabel();
 
     }
 
     private void makeHandVisiblePlayer() {
-        playerHand.getChildren().clear();
+        playerHandBox.getChildren().clear();
         for (Card c : player.getHand().getHandCards()) {
-            playerHand.getChildren().add(createCardImageView(c.getImageName()));
+            playerHandBox.getChildren().add(createCardImageView(c.getImageName()));
         }
     }
 
     private void makeHandVisibleDealer() {
-        dealerHand.getChildren().clear();
-        boolean roundIsOver = gameOverBox.isVisible();
+        dealerHandBox.getChildren().clear();
+        boolean roundIsOver = gameOverGroup.isVisible();
 
         int i = 0;
         for (Card c : dealer.getHand().getHandCards()) {
             if (i == 1 && !roundIsOver) {
-                dealerHand.getChildren().add(createCardImageView("back.png"));
+                dealerHandBox.getChildren().add(createCardImageView("back.png"));
             } else {
-                dealerHand.getChildren().add(createCardImageView(c.getImageName()));
+                dealerHandBox.getChildren().add(createCardImageView(c.getImageName()));
             }
             i++;
         }
@@ -261,7 +299,9 @@ public class BlackjackController {
             view.setFitWidth(65);
             view.setPreserveRatio(true);
             return view;
-        } catch (Exception e) { return new ImageView(); }
+        } catch (Exception e) {
+            return new ImageView();
+        }
     }
 
     private void setupChipEvent(ImageView chipView, int value) {
@@ -282,23 +322,46 @@ public class BlackjackController {
             ImageView placedChip = new ImageView(new Image(getClass().getResourceAsStream(imagePath)));
             placedChip.setFitWidth(110);
             placedChip.setPreserveRatio(true);
-            placedChip.setOnMouseClicked(e -> { e.consume(); removeTopChip(); });
+            placedChip.setOnMouseClicked(e -> {
+                e.consume();
+                removeTopChip();
+            });
             betStack.getChildren().add(placedChip);
             updateCurrentBet();
-        } catch (Exception e) {}
+        } catch (Exception e) {
+        }
     }
 
-    @FXML protected void onAllInClicked() {
+    @FXML
+    protected void onAllInClicked() {
         onClearBetClicked();
         int rem = (player != null) ? player.getBalance() : 1000;
-        while (rem >= 500) { addChipInternal(500); rem -= 500; }
-        while (rem >= 200) { addChipInternal(200); rem -= 200; }
-        while (rem >= 100) { addChipInternal(100); rem -= 100; }
-        while (rem >= 50)  { addChipInternal(50);  rem -= 50; }
+        while (rem >= 500) {
+            addChipInternal(500);
+            rem -= 500;
+        }
+        while (rem >= 200) {
+            addChipInternal(200);
+            rem -= 200;
+        }
+        while (rem >= 100) {
+            addChipInternal(100);
+            rem -= 100;
+        }
+        while (rem >= 50) {
+            addChipInternal(50);
+            rem -= 50;
+        }
     }
-    private void addChipInternal(int val) { tempBetAmount+=val; betHistory.push(val); addChipToTableVisual(val); }
 
-    @FXML protected void onClearBetClicked() {
+    private void addChipInternal(int val) {
+        tempBetAmount += val;
+        betHistory.push(val);
+        addChipToTableVisual(val);
+    }
+
+    @FXML
+    protected void onClearBetClicked() {
         tempBetAmount = 0;
         betHistory.clear();
         betStack.getChildren().clear();
@@ -314,19 +377,19 @@ public class BlackjackController {
     }
 
     public void updateBalanceLabel() {
-        if (player != null) balanceLabel.setText("Balance: " + player.getBalance() + "$");
+        if (player != null) playerBalanceLabel.setText("Balance: " + player.getBalance() + "$");
     }
 
     public void switchToStartMenu() {
-        RulesMenu.setVisible(false);
+        rulesPane1.setVisible(false);
         rulesPane2.setVisible(false);
-        StartMenu.setVisible(true);
-        GameMenu.setVisible(false);
+        menuPane.setVisible(true);
+        gamePane.setVisible(false);
     }
 
     public void switchToRulesMenu() {
-        StartMenu.setVisible(false);
-        RulesMenu.setVisible(true);
+        menuPane.setVisible(false);
+        rulesPane1.setVisible(true);
     }
 
     public void exitGame() {
@@ -336,5 +399,36 @@ public class BlackjackController {
 
     public void updateCurrentBet() {
         playerBetLabel.setText("Current Bet: " + tempBetAmount);
+        playerBetLabel2.setText("Current Bet: " + tempBetAmount);
+    }
+
+    public void updateHandValue() {
+        playerHandValue.setText("Player Hand: \n" + player.getValue());
+        dealerHandValue.setText("Dealer Hand: \n" + player.getValue());
+    }
+
+    public void updateDealerSkin() {
+        if(currentDealerSkin <= countDealerSkins() && currentDealerSkin > 0){
+            String path = "/at/ac/hcw/blackjack_b_plus_plus/images/dealer_skins/dealer_" + currentDealerSkin + ".png";
+            Image newSkin = new Image(getClass().getResourceAsStream(path));
+
+            dealer_skin.setFitWidth(1200);
+            dealer_skin.setFitHeight(1200);
+            dealer_skin.setPreserveRatio(true);
+            dealer_skin.setImage(newSkin);
+        }
+    }
+
+    private int countDealerSkins() {
+        int count = 0;
+        while(true){
+            String path = "/at/ac/hcw/blackjack_b_plus_plus/images/dealer_skins/dealer_" + (count + 1) + ".png";
+            if(getClass().getResource(path) != null){
+                count++;
+            }else{
+                break;
+            }
+        }
+        return count;
     }
 }
