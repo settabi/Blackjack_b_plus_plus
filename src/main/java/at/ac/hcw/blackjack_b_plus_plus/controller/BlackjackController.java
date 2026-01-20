@@ -26,6 +26,8 @@ public class BlackjackController {
     @FXML
     public Label playerBetLabel;
     @FXML
+    private Label dealerNameLabel;
+    @FXML
     public Label playerBetLabel2;
     @FXML
     public Label playerHandValue;
@@ -137,17 +139,29 @@ public class BlackjackController {
         });
 
         //Skin ändern
+        updateDealerSkin();
         btnChangeSkinRight.setOnMouseClicked(e -> {
-            if (currentDealerSkin < countDealerSkins()) {
+//            if (currentDealerSkin < countDealerSkins()) {
+//                currentDealerSkin++;
+//                updateDealerSkin();
+            int maxSkins = countDealerSkins();
+            if (currentDealerSkin<maxSkins){
                 currentDealerSkin++;
-                updateDealerSkin();
+            }else {
+                currentDealerSkin =1;
             }
+            updateDealerSkin();
         });
+        updateDealerSkin();
         btnChangeSkinLeft.setOnMouseClicked(e -> {
+            int maxSkins = countDealerSkins();
+
             if (currentDealerSkin > 1) {
                 currentDealerSkin--;
-                updateDealerSkin();
+            } else {
+                currentDealerSkin = maxSkins;
             }
+            updateDealerSkin();
         });
 
         // Chips
@@ -474,10 +488,48 @@ public class BlackjackController {
             String path = "/at/ac/hcw/blackjack_b_plus_plus/images/dealer_skins/dealer_" + currentDealerSkin + ".png";
             Image newSkin = new Image(getClass().getResourceAsStream(path));
 
-            dealer_skin.setFitWidth(1200);
-            dealer_skin.setFitHeight(1200);
-            dealer_skin.setPreserveRatio(true);
             dealer_skin.setImage(newSkin);
+
+            switch (currentDealerSkin){
+                case 1: //yumeko
+                    dealer_skin.setFitHeight(1200);
+                    dealer_skin.setFitWidth(1200);
+                    dealer_skin.setTranslateY(-160);
+                    dealer_skin.setTranslateX(0);
+                    dealerNameLabel.setText("Yumeko");
+                    break;
+                case 2://random ahh person
+                    dealer_skin.setFitWidth(1400);
+                    dealer_skin.setFitHeight(1400);
+                    dealer_skin.setTranslateY(-105);
+                    dealer_skin.setTranslateX(0);
+                    dealerNameLabel.setText("Myterio");
+                    break;
+                case 3:
+                    dealer_skin.setFitHeight(1000);
+                    dealer_skin.setFitWidth(1000);
+                    dealer_skin.setTranslateY(-195);
+                    dealer_skin.setTranslateX(-20);
+                    dealerNameLabel.setText("Yugi");
+                    break;
+                case 4:
+                    dealer_skin.setFitWidth(1400);
+                    dealer_skin.setFitHeight(1400);
+                    dealer_skin.setTranslateY(-115);
+                    dealer_skin.setTranslateX(0);
+                    dealerNameLabel.setText("Mursello");
+                    break;
+
+                default: //just in case man weiß nie
+                    dealer_skin.setScaleX(0.33);
+                    dealer_skin.setScaleY(0.33);
+                    dealer_skin.setTranslateY(0);
+                    dealer_skin.setTranslateX(0);
+                    dealerNameLabel.setText("unknown");
+                    break;
+            }
+
+            dealer_skin.setPreserveRatio(true);
         }
     }
 

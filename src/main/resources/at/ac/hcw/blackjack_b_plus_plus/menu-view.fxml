@@ -142,7 +142,7 @@
                                         <StackPane pickOnBounds="false">
                                             <children>
                                                 <ImageView fx:id="btnChangeSkinRight" fitWidth="60.0" pickOnBounds="true"
-                                                           preserveRatio="true" translateX="200.0" translateY="-200">
+                                                           preserveRatio="true" translateX="200.0" translateY="-180">
                                                     <image>
                                                         <Image url="@images/pfeil_nach_rechts.png"/>
                                                     </image>
@@ -151,7 +151,7 @@
                                                     </cursor>
                                                 </ImageView>
                                                 <ImageView fx:id="btnChangeSkinLeft" fitWidth="60.0" pickOnBounds="true"
-                                                           preserveRatio="true" translateX="-200.0" translateY="-200">
+                                                           preserveRatio="true" translateX="-200.0" translateY="-180">
                                                     <image>
                                                         <Image url="@images/pfeil_nach_links.png"/>
                                                     </image>
@@ -252,6 +252,26 @@
                         <AnchorPane pickOnBounds="false">
                             <children>
 
+                                <StackPane alignment="CENTER" AnchorPane.rightAnchor="230.0" AnchorPane.topAnchor="225.0">
+                                    <children>
+                                        <ImageView fitWidth="200" pickOnBounds="true" preserveRatio="true">
+                                            <image>
+                                                <Image url="@images/dealername_background.png" />
+                                            </image>
+                                        </ImageView>
+
+                                        <VBox alignment="CENTER" spacing="2.0">
+                                            <children>
+                                                <Label fx:id="dealerNameLabel" text="Yumeko" textFill="white">
+                                                    <font><Font name="Times New Roman" size="24.0" /></font>
+                                                    <effect><DropShadow color="#000000a6" height="5.0" radius="2.0" width="5.0" /></effect>
+                                                </Label>
+                                            </children>
+                                            <padding><Insets top="4.0" bottom="5.0" /></padding>
+                                        </VBox>
+                                    </children>
+                                </StackPane>
+
                                 <StackPane alignment="CENTER_LEFT" translateY="175.0" AnchorPane.leftAnchor="0.0"
                                            AnchorPane.topAnchor="0.0">
                                     <children>
@@ -298,6 +318,7 @@
                                         <DropShadow color="black" radius="3.0"/>
                                     </effect>
                                 </Label>
+
                                 <StackPane alignment="BOTTOM_LEFT" translateY="850.0" AnchorPane.leftAnchor="0.0"
                                            AnchorPane.topAnchor="0.0">
                                     <children>
